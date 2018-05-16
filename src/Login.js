@@ -20,7 +20,7 @@ static navigationOptions = {
         <TextInput accessible={true} accessibilityLabel={'Tap here to enter User Name'} onChangeText={(text) => this.setState({userName: text})} />
         <Text>Email Id</Text>
         <TextInput accessible={true} accessibilityLabel={'Tap here to enter Email Id'} onChangeText={(text) => this.setState({emailId: text})} />
-        <Button title="Login" onPress={() => this.props.navigation.navigate('Flatlist')}/>
+        <Button accessible={true} accessibilityLabel={'Tap to proceed to next screen'} title="Login" onPress={() => this.props.navigation.navigate('Flatlist')}/>
       </View>
     )
   }
