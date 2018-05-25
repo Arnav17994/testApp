@@ -1,28 +1,36 @@
 // javascript
 
-const webdriverio = require('webdriverio');
+const wdio = require('webdriverio');
 
-const options = {
+const opts = {
   port: 4723,
   desiredCapabilities: {
     platformName: "Android",
-    platformVersion: "8.1.0",
+    platformVersion: "7.0",
     deviceName: "Android Emulator",
-    app: "/home/itachi/testApp/android/app/build/outputs/apk/app-release.apk",
-    automationName: "UiAutomator2"
-
+    app: "/home/itachi/Downloads/Veris.apk",
+    automationName: "UiAutomator2",
+    autoGrantPermissions: "true"
   }
 };
 
+const client = wdio.remote(opts);
 
-webdriverio
-  .remote(options)
-  .init()
-  // .orientation("LANDSCAPE")
-  // .source()
-  // .timeoutsImplicitWait(5000)
-  .element('~Tap to proceed to next screen')
-  // .element("#Tap here to enter User Name")
-  // .setValue("~Tap here to enter User Name", "Avinash")
-  .end();
+client
+.init()
+// .toggleAirplaneMode()
+.toggleWiFi()
 
+.settings()
+
+// .session('c8db88a0-47a6-47a1-802d-164d746c06aa')
+// .timeoutsImplicitWait(5000)
+// .setValue("~Tap here to enter User Name", "avinash")
+// .setValue("~Tap here to enter Email Id", "password")
+// .click("~Tap to proceed to next screen")
+
+  // .click("~SubmitScreen")
+.back()
+  // .elementActive()
+  // .back();
+.end()

@@ -7,9 +7,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "appium": "^1.8.0",
+    "appium-doctor": "^1.4.3",
+    "appium-uiautomator2-driver": "^1.12.0",
     "react": "16.3.1",
     "react-native": "0.55.4",
-    "react-navigation": "^2.0.1"
+    "react-native-cli": "^2.0.1",
+    "react-navigation": "^2.0.1",
+    "webdriverio": "^4.12.0"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
