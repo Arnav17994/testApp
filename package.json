@@ -7,6 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "appcenter": "^1.5.1",
+    "appcenter-analytics": "^1.5.1",
+    "appcenter-crashes": "^1.5.1",
     "appium": "^1.8.0",
     "appium-doctor": "^1.4.3",
     "appium-uiautomator2-driver": "^1.12.0",

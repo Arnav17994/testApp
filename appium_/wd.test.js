@@ -19,20 +19,20 @@ async function test()
   const driver = wd.promiseChainRemote(serverConfig);
   await driver.init(desired);
 
-  for (let i = 0; i < 3; i++)
+  for (let i = 0; i < 100; i++)
   {
 
-    driver.setImplicitWaitTimeout(5000);
+    driver.setImplicitWaitTimeout(50000);
     let t = await driver.elementByAccessibilityId("Tap here to enter User Name");
     await t.clear();
     await t.type("avinash");
 
-    driver.setImplicitWaitTimeout(5000);
+    driver.setImplicitWaitTimeout(50000);
     let t2 = await driver.elementByAccessibilityId("Tap here to enter Email Id")
     await t2.clear();
     await t2.type("password");
 
-    driver.setImplicitWaitTimeout(5000);
+    driver.setImplicitWaitTimeout(50000);
     let t3 = await driver.elementByAccessibilityId("Tap to proceed to next screen");
     await t3.click();
 
