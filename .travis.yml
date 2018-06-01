@@ -24,7 +24,7 @@ licenses:
     - 'google-gdk-license-.+'
 
 script:
-- cd android && ./gradlew assembleRelease
+- cd android && ./gradlew assembleRelease && cd ..
 - cd appium_ && node wd.test.js
 
 before_cache:
