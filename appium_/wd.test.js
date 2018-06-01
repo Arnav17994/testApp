@@ -10,7 +10,7 @@ const desired = {
   deviceName: 'Android Emulator',
   platformVersion: "7.0",
   automationName: "UiAutomator2",
-  app: "/home/itachi/Downloads/app-release.apk",
+  app: "/home/itachi/testApp/android/app/build/outputs/apk/app-release.apk",
   autoGrantPermissions: "true"
 }
 
