@@ -48,7 +48,7 @@ android:
 
 script:
 - cd android && ./gradlew assembleRelease
-- node appium_/wd.test.js
+- cd appium_ && node wd.test.js
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
